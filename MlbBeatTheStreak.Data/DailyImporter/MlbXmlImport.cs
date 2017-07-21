@@ -18,6 +18,19 @@ namespace MlbBeatTheStreak.Data
 
         private GameModel GetGame(XDocument mlbGameDetailsDocument)
         {
+            BoxscoreModel boxscore = GetBoxscore(mlbGameDetailsDocument);
+            TeamsModel team = GetTeams(mlbGameDetailsDocument);
+
+            //throw new NotImplementedException();
+        }
+
+        private TeamsModel GetTeams(XDocument mlbGameDetailsDocument)
+        {
+            throw new NotImplementedException();
+        }
+
+        private BoxscoreModel GetBoxscore(XDocument mlbGameDetailsDocument)
+        {
             throw new NotImplementedException();
         }
 
