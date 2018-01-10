@@ -41,9 +41,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DailyImporter\MlbXmlImport.cs" />
-    <Compile Include="Models\BoxscoreModel.cs" />
-    <Compile Include="Models\GameModel.cs" />
-    <Compile Include="Models\TeamsModel.cs" />
+    <Compile Include="Models\Batter.cs" />
+    <Compile Include="Models\Game.cs" />
+    <Compile Include="Models\Team.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MlbBeatTheStreak.Data.Models
 {
-    class TeamsModel
+    public class Batter
     {
     }
 }

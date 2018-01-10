@@ -10,26 +10,26 @@ namespace MlbBeatTheStreak.Data
 {
     public class MlbXmlImport
     {
-        public GameModel GetTorYankGame() {
+        public Game GetTorYankGame() {
             XDocument mlbGameDetailsDocument = LoadXml();
-            GameModel game = GetGame(mlbGameDetailsDocument);
+            Game game = GetGame(mlbGameDetailsDocument);
             return game;
         }
 
-        private GameModel GetGame(XDocument mlbGameDetailsDocument)
+        private Game GetGame(XDocument mlbGameDetailsDocument)
         {
-            BoxscoreModel boxscore = GetBoxscore(mlbGameDetailsDocument);
-            TeamsModel team = GetTeams(mlbGameDetailsDocument);
+            Batter boxscore = GetBoxscore(mlbGameDetailsDocument);
+            Team team = GetTeams(mlbGameDetailsDocument);
 
             //throw new NotImplementedException();
         }
 
-        private TeamsModel GetTeams(XDocument mlbGameDetailsDocument)
+        private Team GetTeams(XDocument mlbGameDetailsDocument)
         {
             throw new NotImplementedException();
         }
 
-        private BoxscoreModel GetBoxscore(XDocument mlbGameDetailsDocument)
+        private Batter GetBoxscore(XDocument mlbGameDetailsDocument)
         {
             throw new NotImplementedException();
         }
